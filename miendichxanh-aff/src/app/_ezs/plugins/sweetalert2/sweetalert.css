@@ -1,0 +1,72 @@
+:root {
+    --swl2-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+    --swl2-bg: #fff;
+    --swl2-bg-backdrop: rgba(0, 0, 0, .4);
+    --swl2-desc-color: #3F4254;
+    --swl2-title-color: #222222;
+    --swl2-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    --swl2-btn-cancel: #929292;
+    --swl2-btn-cancel-shadow: 0 0 0 3px rgba(110, 120, 129, .5);
+}
+
+html.dark {
+    --swl2-bg: #1e1e2d;
+    --swl2-desc-color: #CDCDDE;
+    --swl2-title-color: #ffffff;
+    --swl2-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    --swl2-btn-cancel: #2A2A3C;
+    --swl2-btn-cancel-shadow: 0 0 0 3px rgba(225, 225, 255, .2);
+}
+
+html body.swal2-height-auto {
+    height: 100% !important;
+}
+
+body .swal2-popup {
+    background: var(--swl2-bg);
+    box-shadow: var(--swl2-shadow);
+}
+
+body .swal2-html-container {
+    display: block;
+    padding: 0 20px;
+    line-height: 30px;
+    color: var(--swl2-desc-color);
+}
+
+body .swal2-title {
+    font-family: "Inter", sans-serif;
+    color: var(--swl2-title-color);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+body .swal2-styled.swal2-confirm {
+    background-color: #3699ff;
+}
+
+body .swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgba(54, 153, 255, .5);
+}
+
+body .swal2-styled.swal2-confirm.\!bg-danger:focus {
+    box-shadow: 0 0 0 3px rgb(255, 171, 171);
+}
+
+body .swal2-styled.swal2-cancel {
+    background-color: var(--swl2-btn-cancel)
+}
+
+body .swal2-styled.swal2-cancel:focus {
+    box-shadow: var(--swl2-btn-cancel-shadow);
+}
+
+@media (max-width: 767px) {
+    body div:where(.swal2-container) .swal2-html-container {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    body .swal2-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply font-sans w-full h-full text-[15px] leading-6
+}
+
+#root {
+  @apply w-full h-full
+}
