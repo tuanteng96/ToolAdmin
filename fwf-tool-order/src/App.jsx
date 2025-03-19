@@ -12,6 +12,7 @@ function App() {
   const urlParams = new URLSearchParams(queryString);
   const StockIDs = urlParams.get("stockids");
   const DynamicIDs = urlParams.get("dynamicids");
+  const MachineID = urlParams.get("machineid");
   
   const [filters, setFilters] = useState({
     Date: new Date(),
@@ -31,6 +32,7 @@ function App() {
       },
     ],
     include: ["Cash"],
+    MachineID: MachineID || "17000096",
   });
 
   let [Content, setContent] = useState("");
@@ -61,7 +63,7 @@ function App() {
             let Values = [];
             for (let item of data.hours) {
               let arr = [
-                11000220,
+                MachineID || 11000220,
                 moment(filters.Date).format("DDMMYYYY"),
                 moment(filters.Date).format("DDMMYYYY"),
                 item.Hour < 10 ? `0${item.Hour}` : item.Hour,

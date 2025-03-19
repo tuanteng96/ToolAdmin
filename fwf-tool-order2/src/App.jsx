@@ -63,7 +63,7 @@ function App() {
             let Values = [];
             for (let item of data.hours) {
               let arr = [
-                17000096,
+                MachineID || 17000096,
                 moment(filters.Date).format("DDMMYYYY"),
                 moment(filters.Date).format("DDMMYYYY"),
                 item.Hour < 10 ? `0${item.Hour}` : item.Hour,
