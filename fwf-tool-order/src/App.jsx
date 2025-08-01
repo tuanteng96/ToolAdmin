@@ -28,7 +28,7 @@ function App() {
       },
       {
         PreodOrService: [0],
-        Ratio: 1.1,
+        Ratio: 1.08,
       },
     ],
     include: ["Cash"],
