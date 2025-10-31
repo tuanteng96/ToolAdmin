@@ -64,8 +64,8 @@ function App() {
             for (let item of data.hours) {
               let arr = [
                 MachineID || 11000220,
-                moment(filters.Date).format("YYYYMMDD"),
-                moment(filters.Date).format("YYYYMMDD"),
+                moment(filters.Date).format("DDMMYYYY"),
+                moment(filters.Date).format("DDMMYYYY"),
                 item.Hour < 10 ? `0${item.Hour}` : item.Hour,
                 item.OrderCount,
                 `${item.Value1}.00`,
