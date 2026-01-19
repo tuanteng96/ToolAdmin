@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "TikTok Sans", sans-serif;
+}
+
+html,
+body {
+    font-size: 14px;
+}
